@@ -8,7 +8,7 @@ This is a usable first release, not a validated claim of indistinguishable human
 
 ## Start here
 
-Install the Claude Code plugin from this repository:
+Install the Claude Code plugin from our independent GitHub marketplace:
 
 ```text
 /plugin marketplace add OmShiv/author-voice
@@ -17,9 +17,12 @@ Install the Claude Code plugin from this repository:
 
 Then use `/author-voice:author-voice` in your conversation. For other platforms, download a package from [Releases](https://github.com/OmShiv/author-voice/releases) or build from source below. Curated directory submissions and live platform evaluations are pending; this beta makes no measured cross-model quality claims. Maintainers can follow [the publishing steps](docs/publishing.md).
 
+**Does this require an Anthropic marketplace listing?** No. This repository includes its own plugin catalog in [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json). The first command registers that catalog; the second installs Author Voice from it. Anthropic's screened community marketplace and curated official marketplace are separate distribution options. Author Voice has not been submitted to or listed in either. Direct installation from this public repository works where custom marketplaces are allowed. [How Claude marketplaces work](https://code.claude.com/docs/en/discover-plugins).
+
 | Platform | Artifact | Setup |
 | --- | --- | --- |
-| Claude chat | Uploadable skill ZIP | [Claude setup](platforms/claude/SETUP.md) |
+| Claude Desktop / Cowork | GitHub plugin marketplace; skill ZIP also available | [Claude setup](platforms/claude/SETUP.md) |
+| Claude chat skill upload | Uploadable skill ZIP | [Claude setup](platforms/claude/SETUP.md) |
 | Claude Code | Native plugin | [Claude setup](platforms/claude/SETUP.md) |
 | ChatGPT / Codex | Native plugin and local marketplace bundle | [ChatGPT setup](platforms/chatgpt/SETUP.md) |
 | ChatGPT instruction-based workflows | Portable instructions and optional knowledge | [ChatGPT setup](platforms/chatgpt/SETUP.md) |
@@ -99,6 +102,6 @@ python3 scripts/prepare_submission.py
 
 See [the validation record](docs/validation.md) for the checks performed on this release and the remaining host-level evaluation.
 
-The public Claude marketplace lives in `.claude-plugin/marketplace.json`. GitHub Actions validates the package and can prepare a draft beta release from an existing version tag. The package is available under the [MIT License](LICENSE). See [privacy](docs/privacy.md) and [terms](docs/terms.md) for data handling and use, or [report an issue](https://github.com/OmShiv/author-voice/issues).
+The project's GitHub-hosted Claude marketplace lives in `.claude-plugin/marketplace.json`. GitHub Actions validates the package and can prepare a draft beta release from an existing version tag. The package is available under the [MIT License](LICENSE). See [privacy](docs/privacy.md) and [terms](docs/terms.md) for data handling and use, or [report an issue](https://github.com/OmShiv/author-voice/issues).
 
 Nothing in the build installs into your accounts, publishes a plugin, or changes sharing permissions. The packages contain instructions and an offline Python checker, with no telemetry, API calls, browser interception, or model dependency. Material you submit to a host remains subject to that host's normal handling.

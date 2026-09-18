@@ -1,6 +1,18 @@
 # Claude
 
-## Claude chat
+Author Voice is distributed through our own public GitHub marketplace. Installing from it does not require inclusion in Anthropic's community or official marketplaces. Author Voice is not listed in either. Organization policies can restrict custom marketplaces. [Official marketplace documentation](https://code.claude.com/docs/en/discover-plugins).
+
+## Claude Desktop and Cowork plugin
+
+1. Open **Customize → Plugins**. In Cowork, open the Cowork tab first.
+2. Under **Personal plugins**, select **+ → Add marketplace → Add from a repository**.
+3. Enter `https://github.com/OmShiv/author-voice`.
+4. Install **Author Voice** from the added marketplace.
+5. In a conversation, type `/` or use the `+` menu to select the plugin's skill.
+
+These steps add the project's GitHub catalog directly. They do not depend on finding Author Voice in Anthropic's default catalog. [Official Claude plugin instructions](https://support.claude.com/en/articles/13837440-use-plugins-in-claude).
+
+## Claude chat skill upload
 
 Build from the repository root with `python3 scripts/build.py`. In Claude, open **Customize → Skills → + → Create skill → Upload a skill**, then upload `dist/author-voice-skill.zip` and enable it. The ZIP contains the named skill folder and its references. Availability depends on your account's skill and code-execution settings. [Official skill instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -33,4 +45,4 @@ The repeated name is the plugin namespace followed by the skill name. `--plugin-
 
 If skill uploads are unavailable, use the generated portable instructions from `platforms/chatgpt/instructions.md` as project instructions; optional supporting knowledge is in `platforms/shared/knowledge.md`. This fallback provides the editing method, not a new document tool.
 
-Package format checked locally; account upload and manuscript behavior require testing in your Claude account. UI documentation checked September 12, 2026.
+The repository marketplace was installed successfully in Claude Code 2.1.269 at user scope on macOS, with Author Voice 0.1.0 enabled. Desktop installation, account skill upload, and manuscript behavior still require testing in the relevant account. UI documentation checked September 17, 2026.

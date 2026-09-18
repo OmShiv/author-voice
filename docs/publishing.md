@@ -65,7 +65,7 @@ The root `.claude-plugin/marketplace.json` makes this repository a Claude Code m
 
 Then invoke `/author-voice:author-voice`. Claude chat users download the skill ZIP from the GitHub release and follow [Claude setup](../platforms/claude/SETUP.md).
 
-This repository distribution does not require acceptance into Anthropic's curated directory. For directory discovery, submit the public plugin at [Anthropic's plugin submission portal](https://platform.claude.com/plugins/submit), using the same listing and release information. Directory acceptance is a separate review. [Official marketplace instructions](https://code.claude.com/docs/en/plugin-marketplaces), [plugin publishing guidance](https://code.claude.com/docs/en/plugins).
+Direct repository distribution requires no Anthropic directory listing. For broader discovery, follow the submission options for [Anthropic's community marketplace](https://code.claude.com/docs/en/discover-plugins#community-marketplace), whose entries undergo automated validation and safety screening. Anthropic separately curates its official marketplace; community submission does not place a plugin there. Author Voice has not been submitted to either. [Official marketplace instructions](https://code.claude.com/docs/en/plugin-marketplaces).
 
 ## 5. Submit the native ChatGPT / Codex plugin
 
