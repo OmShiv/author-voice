@@ -15,9 +15,9 @@ Install the Claude Code plugin from our independent GitHub marketplace:
 /plugin install author-voice@author-voice
 ```
 
-Then use `/author-voice:author-voice` in your conversation. For other platforms, download a package from [Releases](https://github.com/OmShiv/author-voice/releases) or build from source below. Curated directory submissions and live platform evaluations are pending; this beta makes no measured cross-model quality claims. Maintainers can follow [the publishing steps](docs/publishing.md).
+Then use `/author-voice:author-voice` in your conversation. For other platforms, download a package from [Releases](https://github.com/OmShiv/author-voice/releases) or build from source below. This beta makes no measured cross-model quality claims.
 
-**Does this require an Anthropic marketplace listing?** No. This repository includes its own plugin catalog in [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json). The first command registers that catalog; the second installs Author Voice from it. Anthropic's screened community marketplace and curated official marketplace are separate distribution options. Author Voice has not been submitted to or listed in either. Direct installation from this public repository works where custom marketplaces are allowed. [How Claude marketplaces work](https://code.claude.com/docs/en/discover-plugins).
+An Anthropic directory listing is optional for direct installation. This repository includes its own plugin catalog in [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json). The first command registers that catalog; the second installs Author Voice from it. Anthropic's screened community marketplace and curated official marketplace are separate distribution options. Author Voice is distributed independently. Direct installation from this public repository works where custom marketplaces are allowed. [How Claude marketplaces work](https://code.claude.com/docs/en/discover-plugins).
 
 | Platform | Artifact | Setup |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Build the archives with Python 3.10 or later; no dependencies or API keys:
 python3 scripts/build.py
 ```
 
-Ready-to-use archives appear in `dist/`. They are generated and excluded from Git. The source, instructions, examples, and evaluations are versioned. Source research files and private manuscripts are not included in the distributable packages.
+Ready-to-use archives appear in `dist/`. They are generated and excluded from Git. The source, instructions, examples, and evaluations are versioned.
 
 ## Use it
 
@@ -73,7 +73,7 @@ A profile is optional. [The starter profile](profiles/starter.md) provides basel
 - Supports a paper, a book, or an author-specific profile without forcing the same voice on all three.
 - Checks revisions once and leaves sound prose unchanged.
 
-Read [the research assessment](docs/research-assessment.md) for what the supplied evidence supports and [the design notes](docs/design.md) for tradeoffs and scope.
+Read [the design documentation](docs/design.md) for architecture, tradeoffs, and scope.
 
 ## Local checks without model tokens
 
@@ -100,7 +100,7 @@ python3 scripts/prepare_submission.py
 
 [The evaluation suite](evals/README.md) covers fidelity, restraint, genre, missing evidence, and document boundaries. Packaging and checker tests are automated. Editorial quality across Claude, ChatGPT, and Gemini still requires running the supplied cases on those hosts and reviewing their actual outputs; the included examples are illustrative, not benchmark results.
 
-See [the validation record](docs/validation.md) for the checks performed on this release and the remaining host-level evaluation.
+See [testing and limitations](docs/testing.md) for reproducible checks and the limits of automated validation. CI results are available in [Actions](https://github.com/OmShiv/author-voice/actions).
 
 The project's GitHub-hosted Claude marketplace lives in `.claude-plugin/marketplace.json`. GitHub Actions validates the package and can prepare a draft beta release from an existing version tag. The package is available under the [MIT License](LICENSE). See [privacy](docs/privacy.md) and [terms](docs/terms.md) for data handling and use, or [report an issue](https://github.com/OmShiv/author-voice/issues).
 

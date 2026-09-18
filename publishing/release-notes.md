@@ -9,4 +9,4 @@ Initial release of a shared writing and revision skill for research papers and b
 
 The archives contain the same canonical instructions. No external service, API key, or additional Python package is needed by the local checker.
 
-This is a beta. Local package validation and automated checker tests do not establish editorial quality across models. See the repository's validation record for checks performed and the evaluation suite for reproducible host-level cases. Review changes to meaning and citation associations before publishing a manuscript.
+This is a beta. Automated checker tests do not establish editorial quality across models. See the testing documentation and evaluation suite for reproducible checks. Review changes to meaning and citation associations before publishing a manuscript.

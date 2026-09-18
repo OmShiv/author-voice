@@ -5,6 +5,12 @@ __pycache__/
 .work/
 dist/
 private/
+internal/
+worklogs/
+session-notes/
+WORKLOG.md
+worklog.md
+*.worklog.md
 evals/responses/
 evals/results/
 .env

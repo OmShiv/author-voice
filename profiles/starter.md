@@ -1,6 +1,6 @@
 # Starter profile
 
-This is a preference preset derived from the supplied prompt, not an inferred profile of the author's writing. Copy it into a project's instructions if useful; adapt it separately for each book or paper.
+This is a general editorial preference preset. Copy it into a project's instructions if useful, and adapt it for each book or paper using your own writing samples.
 
 Write with technical precision, clarity, and understatement for an informed reader. Prefer concrete nouns and operational verbs. Remove promotional judgments and transitions that add no logical relationship. Retain familiar disciplinary language, meaningful uncertainty, and enough explanation for the intended audience.
 

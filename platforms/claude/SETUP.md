@@ -45,4 +45,4 @@ The repeated name is the plugin namespace followed by the skill name. `--plugin-
 
 If skill uploads are unavailable, use the generated portable instructions from `platforms/chatgpt/instructions.md` as project instructions; optional supporting knowledge is in `platforms/shared/knowledge.md`. This fallback provides the editing method, not a new document tool.
 
-The repository marketplace was installed successfully in Claude Code 2.1.269 at user scope on macOS, with Author Voice 0.1.0 enabled. Desktop installation, account skill upload, and manuscript behavior still require testing in the relevant account. UI documentation checked September 17, 2026.
+In Claude Code, choose user scope to make the plugin available across projects. In a new conversation, invoke the skill explicitly with a short sample to check that it is available.

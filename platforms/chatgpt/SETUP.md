@@ -24,4 +24,4 @@ For an existing Custom GPT or project that accepts instructions, paste `instruct
 
 A dedicated chat can use the instructions as its first message when configuration is unavailable. Critical fidelity rules are in the instructions; optional knowledge is not needed for ordinary edits. Avoid applying a manuscript style globally to unrelated tasks.
 
-These files configure writing behavior. Native Google Docs edits and PDF generation depend on tools available to the conversation. No account installation or public publishing was performed by building the package. Platform documentation checked September 12, 2026.
+These files configure writing behavior. Native Google Docs edits and PDF generation depend on tools available to the conversation. Building the package does not install it into an account or create a public directory listing.
