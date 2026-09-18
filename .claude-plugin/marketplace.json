@@ -1,0 +1,14 @@
+{
+  "name": "author-voice",
+  "owner": {"name": "Om Shankar Tiwari"},
+  "metadata": {
+    "description": "Author Voice for research papers and books."
+  },
+  "plugins": [
+    {
+      "name": "author-voice",
+      "source": "./plugins/author-voice",
+      "description": "Draft and revise research papers and books in the author's voice, with evidence and technical detail preserved."
+    }
+  ]
+}

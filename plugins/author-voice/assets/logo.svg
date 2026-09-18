@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Author Voice: an open book with manuscript lines">
+<rect x="0" y="0" width="512" height="512" rx="112" fill="#173D38"/>
+<rect x="92" y="106" width="152" height="288" rx="24" fill="#F6F0E2"/>
+<rect x="268" y="106" width="152" height="288" rx="24" fill="#F6F0E2"/>
+<rect x="127" y="168" width="80" height="13" rx="6" fill="#173D38"/>
+<rect x="127" y="212" width="70" height="13" rx="6" fill="#173D38"/>
+<rect x="127" y="256" width="85" height="13" rx="6" fill="#173D38"/>
+<rect x="127" y="300" width="63" height="13" rx="6" fill="#173D38"/>
+<rect x="303" y="168" width="68" height="13" rx="6" fill="#173D38"/>
+<rect x="303" y="212" width="82" height="13" rx="6" fill="#173D38"/>
+<rect x="303" y="256" width="63" height="13" rx="6" fill="#173D38"/>
+<rect x="303" y="309" width="66" height="18" rx="9" fill="#BA673B"/>
+</svg>

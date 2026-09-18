@@ -1,0 +1,28 @@
+{
+  "name": "author-voice",
+  "version": "0.1.0",
+  "repository": "https://github.com/OmShiv/author-voice",
+  "homepage": "https://github.com/OmShiv/author-voice",
+  "license": "MIT",
+  "description": "Draft and revise research papers and books in the author's voice, with evidence and technical detail preserved.",
+  "author": {
+    "name": "Om Shankar Tiwari"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Author Voice",
+    "shortDescription": "Natural manuscript prose with evidence preserved.",
+    "longDescription": "Write directly in an author's voice or revise existing manuscripts. Includes paper and book guidance, portable voice profiles, and an optional offline preservation checker.",
+    "developerName": "Om Shankar Tiwari",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png",
+    "brandColor": "#173D38",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Revise this paper while preserving its evidence and my voice.",
+      "Draft a book section from these notes in a clear, natural voice.",
+      "Build a reusable voice profile from my writing samples."
+    ]
+  }
+}

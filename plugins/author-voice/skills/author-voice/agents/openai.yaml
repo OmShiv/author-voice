@@ -1,0 +1,4 @@
+interface:
+  display_name: "Author Voice"
+  short_description: "Natural manuscript prose with evidence preserved"
+  default_prompt: "Use $author-voice to revise this manuscript while preserving its evidence and my voice."

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "author-voice",
+  "version": "0.1.0",
+  "repository": "https://github.com/OmShiv/author-voice",
+  "homepage": "https://github.com/OmShiv/author-voice",
+  "license": "MIT",
+  "description": "Draft and revise research papers and books in the author's voice, with evidence and technical detail preserved.",
+  "author": {"name": "Om Shankar Tiwari"},
+  "keywords": ["writing", "research", "books", "editing", "author-voice"]
+}

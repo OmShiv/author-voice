@@ -1,0 +1,49 @@
+name: Prepare draft release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag to package (for example v0.1.0)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      RELEASE_TAG: ${{ inputs.tag }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - run: python scripts/build.py --check
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/build.py
+      - run: python scripts/validate.py
+      - run: python scripts/prepare_submission.py --require-release --tag "$RELEASE_TAG"
+      - name: Create a draft beta release with verified archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$RELEASE_TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --verify-tag --draft --prerelease \
+            --title "Author Voice $RELEASE_TAG" \
+            --notes-file publishing/release-notes.md \
+            dist/author-voice-skill.zip \
+            dist/author-voice-plugin.zip \
+            dist/author-voice-openai-marketplace.zip \
+            dist/author-voice-chatgpt.zip \
+            dist/author-voice-gemini.zip \
+            dist/SHA256SUMS
